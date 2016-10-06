@@ -1,0 +1,19 @@
+<h1>Create room types</h1>
+<%= form_for :room_type, url:{controller:  'room_type', action: 'create'} do |f| %>
+  <p>
+    <%= f.label :room_type %>
+    <%= f.text_field :room_type %>
+  </p>
+
+  <p>
+    <%= f.label :description%>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :availability%>
+    <%= f.select :availabilty, ['Available', 'Not available'] %>
+  </p>
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

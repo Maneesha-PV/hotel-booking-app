@@ -1,0 +1,28 @@
+
+<h1>Rooms and Room types</h1>
+<table>
+  <thead>
+    <tr>
+   
+      <th>Room number</th>
+      <th>Roomtype</th>
+      <th>Description</th>
+      <th>Availability</th>
+
+ 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rooms.each do |room| %>
+      <tr>
+      	<% if room.admin_id== current_admin.id %>
+        <td><%= room.room_number %></td>
+        <td><%= RoomType.find(room.room_type_select).room_type%></td>
+        <td><%= RoomType.find(room.room_type_select).description%></td>
+        <td><%= RoomType.find(room.room_type_select).availabilty%></td>
+        <td><%= link_to 'Click here for book the room', new_booking_path %></td>
+        <% end %>
+    <% end %>
+  </tbody>
+</table>

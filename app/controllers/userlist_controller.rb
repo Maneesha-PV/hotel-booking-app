@@ -1,0 +1,47 @@
+class UserlistController < ApplicationController
+	def index
+	end
+
+ 	def new
+       @user = User.new
+  end
+
+ 	#def show
+     #@user = User.find_by_id(params[:id])
+   #  @user = User.find(params[:id])
+ 	#end
+
+ 	#def edit
+   #    @user = User.find(params[:id])
+  	# end
+
+ 	def create
+  		 @user=User.new(secure_params)
+   		if @user.save
+     		redirect_to userlist_index_path, :notice => "Successfully created user."
+    	else
+     		redirect_to userlist_index_path, :notice => "User not created."
+  	  end
+ end
+
+ def update
+   @user = User.find(params[:id])
+   if @user.update(secure_params)
+     redirect_to userlist_index_path, :notice => "User updated."
+   else
+     redirect_to userlist_index_path, :alert => "Unable to update user."
+   end
+ end
+
+ def destroy
+   @user = User.find(params[:id])
+   @user.destroy
+   redirect_to userlist_index_path, :notice => "User deleted."
+ end
+
+ private
+ def secure_params
+   params.require(:user).permit(:username, :email, :password, :password_confirmation,:role)
+ end
+
+end

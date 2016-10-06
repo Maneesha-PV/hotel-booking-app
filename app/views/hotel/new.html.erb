@@ -1,0 +1,15 @@
+<h1>Create new hotel</h1>
+<%= form_for :hotel, url:{:controller => 'hotel', :action => 'create'} do |f| %>
+  <p>
+    <%= f.label :Hotel %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :Total_rooms%>
+    <%= f.number_field :number_of_rooms%>
+  </p>
+  <p>
+    <%= f.submit :save%>
+  </p>
+<% end %>

@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Hotel</th>
+      <th>No.of rooms</th>
+ 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hotel.each do |hotel| %>
+      <tr>
+        <td><%= hotel.name %></td>
+        <td><%= hotel.number_of_rooms%></td>
+
+    <% end %>
+  </tbody>
+</table>

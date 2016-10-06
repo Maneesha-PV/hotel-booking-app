@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  check_in_date: 2016-10-03 19:18:53
+  check_out_date: 2016-10-03 19:18:53
+  total_rooms: 1
+  number_of_children: 1
+  number_of_guest: 1
+
+two:
+  check_in_date: 2016-10-03 19:18:53
+  check_out_date: 2016-10-03 19:18:53
+  total_rooms: 1
+  number_of_children: 1
+  number_of_guest: 1

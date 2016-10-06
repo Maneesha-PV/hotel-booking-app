@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <tr>
+      <th>Check-in date</th>
+      <th>Check-out date</th>
+      <th>Children</th>
+      <th>Guest</th>
+
+     
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @booking.each do |booking| %>
+      <% if booking.admin_id== current_admin.id %>
+        <tr>
+         <td><%= booking.check_in_date%></td>
+          <td><%= booking.check_out_date%></td>
+          <td><%= booking.number_of_children%></td>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>

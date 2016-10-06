@@ -1,0 +1,19 @@
+<h1>Create a user</h1>
+<%= form_for :user, url:{:controller => 'userlist', :action => 'create'} do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :username %>
+  </p>
+
+  <p>
+    <%= f.label :email%>
+    <%= f.email_field :email %>
+  </p>
+  <p>
+    <%= f.label :password%>
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

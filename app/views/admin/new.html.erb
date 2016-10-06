@@ -1,0 +1,15 @@
+<h1>Create an admin for the hotel</h1>
+<%= form_for :admin, url:{controller:  'admin', action: 'create', hotel_id: @hotel.id} do |f| %>
+
+  <p>
+    <%= f.label :email%>
+    <%= f.email_field :email %>
+  </p>
+    <p>
+    <%= f.label :password%>
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

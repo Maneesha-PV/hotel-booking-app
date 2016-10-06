@@ -1,0 +1,16 @@
+<h1>Create rooms</h1>
+<%= form_for :room, url:{controller:  'room', action: 'create'} do |f| %>
+  <p>
+    <%= f.label :room_number %>
+    <%= f.number_field :room_number %>
+  </p>
+
+  <p>
+    <%= f.label :room_type%>
+    <% options = options_from_collection_for_select(@room_type, 'id', 'room_type') %>
+    <%= f.select :room_type_select,  options %>
+  </p>
+  <p>
+    <%= f.submit  %>
+  </p>
+<% end %>

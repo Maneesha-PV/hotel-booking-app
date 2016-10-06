@@ -1,0 +1,5 @@
+ <br> Admin : <%= Admin.last.email %></br>
+ <br>Hotel name: <%= Hotel.find(Admin.last.hotel_id).name %> </br>
+ <br>Total rooms: <%= Hotel.find(Admin.last.hotel_id).number_of_rooms %> </br>
+ <br> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+<% else %>

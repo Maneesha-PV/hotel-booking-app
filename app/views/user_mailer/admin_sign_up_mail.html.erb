@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>
+    <br>Successfully allocated new hotel</br>
+    <br>Hotel name: <%= Hotel.find(Admin.last.hotel_id).name %> </br>
+    <br>Total rooms: <%= Hotel.find(Admin.last.hotel_id).number_of_rooms %> </br>
+    </p>
+  </body>
+</html>
