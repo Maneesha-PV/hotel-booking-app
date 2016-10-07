@@ -5,6 +5,8 @@
       <th>Check-out date</th>
       <th>Children</th>
       <th>Guest</th>
+      <th>Room-type</th>
+    
 
      
     </tr>
@@ -12,11 +14,14 @@
 
   <tbody>
     <% @booking.each do |booking| %>
-      <% if booking.admin_id== current_admin.id %>
+      <% if booking.admin_id == current_admin.id %>
         <tr>
          <td><%= booking.check_in_date%></td>
           <td><%= booking.check_out_date%></td>
           <td><%= booking.number_of_children%></td>
+          <td><%= booking.room_type.room_type%></td>
+          <td><b> <%= link_to 'Cancel booking', booking_path(booking.id), method: :delete %></b></td>
+    </tr>
       <% end %>
     <% end %>
   </tbody>

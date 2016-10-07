@@ -3,8 +3,8 @@
   <p>
     <%= f.label :room_number %>
     <%= f.number_field :room_number %>
+  <tr>
   </p>
-
   <p>
     <%= f.label :room_type%>
     <% options = options_from_collection_for_select(@room_type, 'id', 'room_type') %>

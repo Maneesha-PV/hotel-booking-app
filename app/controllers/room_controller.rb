@@ -13,9 +13,14 @@ class RoomController < ApplicationController
 		end
 	end
 	def index
-		@rooms = Room.all
+		@room = Room.all
 		@room_type = RoomType.all
 
+	end
+	def destroy
+		@room = Room.find(params[:id])
+		@room.destroy
+		redirect_to action: 'index'
 	end
 	private
 		def secure_params

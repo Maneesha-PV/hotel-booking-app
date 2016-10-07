@@ -1,3 +1,4 @@
+<br><%= link_to 'Add rooms', new_room_path %> </br>
 
 <h1>Rooms and Room types</h1>
 <table>
@@ -14,14 +15,14 @@
   </thead>
 
   <tbody>
-    <% @rooms.each do |room| %>
+    <% @room.each do |room| %>
       <tr>
-      	<% if room.admin_id== current_admin.id %>
+      	<% if room.admin_id == current_admin.id %>
         <td><%= room.room_number %></td>
         <td><%= RoomType.find(room.room_type_select).room_type%></td>
         <td><%= RoomType.find(room.room_type_select).description%></td>
         <td><%= RoomType.find(room.room_type_select).availabilty%></td>
-        <td><%= link_to 'Click here for book the room', new_booking_path %></td>
+        <td><b> <%= link_to 'Delete room', room_path(room.id), method: :delete %></b></td>
         <% end %>
     <% end %>
   </tbody>
