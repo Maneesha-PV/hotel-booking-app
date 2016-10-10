@@ -4,8 +4,6 @@
     <tr>
    
       <th>Roomtype</th>
-      <th>Number of rooms available on this day</th>
-
     </tr>
   </thead>
   <tbody>
@@ -13,11 +11,9 @@
       <tr>
       	<% if room_type.admin_id == current_admin.id %>
       	  <td><%= room_type.room_type%></td>
-      	<% availability = Room.where('(room_type_select =? )',room_type.id).count - Booking.where('(room_type_id =? AND check_in_date >= ? )',room_type.id,Time.now ).count %></td>
-         <td> <%= availability %></td>
-         <% if (availability != 0) %>
-       	<td> <%= link_to 'Click here for book the room', new_booking_path(room_type_id: room_type)%></td>
+         <td> <%= link_to 'Check availability',new_room_availability_path(room_type_id: room_type)%></td>
+       
         <p>
-        	<% end %>
+        	</tr>
         <% end %>
  <% end %>

@@ -1,0 +1,11 @@
+	<h1> Available rooms </h1>
+	No. of available rooms: <%= @availability %>
+	<p>
+	<% if @availability != 0 %>
+	  <%= link_to 'Click here for book the room', new_booking_path%></td>
+	
+	<% else %>
+		No rooms are available for booking
+	<% end %>
+	</p>
+       

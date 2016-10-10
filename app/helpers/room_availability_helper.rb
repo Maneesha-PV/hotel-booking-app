@@ -1,0 +1,2 @@
+module RoomAvailabilityHelper
+end

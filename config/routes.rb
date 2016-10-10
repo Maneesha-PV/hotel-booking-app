@@ -12,5 +12,7 @@ Rails.application.routes.draw do
  	resources :superadmin
  	resources :booking
  	resources :admin
+ 	resources :admin
+ 	resources :room_availability
  	get '/booking/show'
 end
