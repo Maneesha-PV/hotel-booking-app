@@ -8,7 +8,6 @@
       <th>Room number</th>
       <th>Roomtype</th>
       <th>Description</th>
-      <th>Availability</th>
 
  
     </tr>
@@ -21,7 +20,6 @@
         <td><%= room.room_number %></td>
         <td><%= RoomType.find(room.room_type_select).room_type%></td>
         <td><%= RoomType.find(room.room_type_select).description%></td>
-        <td><%= RoomType.find(room.room_type_select).availabilty%></td>
         <td><b> <%= link_to 'Delete room', room_path(room.id), method: :delete %></b></td>
         <% end %>
     <% end %>

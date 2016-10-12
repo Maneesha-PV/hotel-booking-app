@@ -13,8 +13,6 @@ class WelcomeController < ApplicationController
 			redirect_to admin_index_path		
 		end
 	end
-	def show
-	end
 end
 
 

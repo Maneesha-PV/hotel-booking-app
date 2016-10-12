@@ -1,11 +1,21 @@
-	<h1> Available rooms </h1>
-	No. of available rooms: <%= @availability %>
-	<p>
-	<% if @availability != 0 %>
-	  <%= link_to 'Click here for book the room', new_booking_path%></td>
-	
-	<% else %>
-		No rooms are available for booking
-	<% end %>
-	</p>
-       
+<table>
+  <thead>
+    <tr>
+   
+      <th>Roomtype</th>
+      <th>Available rooms</th>
+    </tr>
+  </thead>
+  <tbody>
+<% @room_type.each do |room_type| %>
+      <tr>
+      	<% if room_type.admin_id == current_admin.id %>
+      	  <td><%= room_type.room_type%></td>
+        <td><%= room_type.availability %></td>
+        <% if (room_type.availability != 0) %>
+          <td><%= link_to 'Click here for book the room', new_booking_path(room_type_id: room_type)%></td>
+          <% end %>
+        <p>
+        	</tr>
+        <% end %>
+ <% end %>

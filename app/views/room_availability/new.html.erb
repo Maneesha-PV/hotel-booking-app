@@ -1,5 +1,5 @@
 <h1>Check availability</h1>
-<%= form_for :room_availability, url:{controller: 'room_availability', action: 'create', room_type_id: @room_type.id} do |f| %>
+<%= form_for :room_availability, url:{controller: 'room_availability', action: 'create'} do |f| %>
   <p>
     <%= f.label :from %>
     <%= f.datetime_field :from %>
