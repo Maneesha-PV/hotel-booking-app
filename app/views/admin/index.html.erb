@@ -1,3 +1,4 @@
+ <div align="center" >
  <h1> <%= current_admin.hotel.name %></h1>
   <br><%= link_to 'Check availability',new_room_availability_path %></br>
   <br><%= link_to 'View available room types', room_type_index_path %> </br>
@@ -5,4 +6,5 @@
 
  <br><%= link_to 'View details of rooms', room_index_path %> </br>
  <br><%= link_to 'View all reservations', booking_show_path %> </br>
- <br><%= link_to('Admin Logout', destroy_admin_session_path, :method => :delete) %> </br>
+<br><%= link_to('Admin Logout', destroy_admin_session_path, :method => :delete) %> </br>
+ 

@@ -15,6 +15,11 @@ class RoomController < ApplicationController
 	def index
 		@room = Room.all
 		@room_type = RoomType.all
+	  respond_to do |format|
+      format.html # index.html.erb
+      #format.json { render json: @room_type}
+      format.json { render json: @room}
+    end
 
 	end
 	def destroy

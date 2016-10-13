@@ -17,6 +17,10 @@ class RoomAvailabilityController < ApplicationController
       @room_type.each do |room_type|
       	 room_type.availability = Room.where('(room_type_select =? )',room_type.id).count - Booking.where('(room_type_id =? AND check_in_date >= ?  AND check_out_date <= ?)',room_type.id,RoomAvailability.last.from,RoomAvailability.last.to ).count 
 			end
+		  respond_to do |format|
+      	format.html # index.html.erb
+      	format.json { render json: @room_type}
+    end
 	end
 	private
 		def availability_params

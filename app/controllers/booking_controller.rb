@@ -11,14 +11,18 @@ class BookingController < ApplicationController
 		@booking.check_out_date = RoomAvailability.last.to
 		@booking.admin_id = current_admin.id
 		if @booking.save
-			UserMailer.booking_confirm_email(current_admin,@booking).deliver_now!
-			redirect_to booking_check_path
+			UserMailer.booking_confirm_email(current_admin,@booking).deliver_later!
+			redirect_to booking_index_path
 		else
 			redirect_to :back, notice: @booking.errors
 		end
 	end
 	def show
 		@booking = Booking.all
+		respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @booking}
+    end
 	end
 	def destroy
 		@booking = Booking.find(params[:id])
@@ -26,8 +30,12 @@ class BookingController < ApplicationController
 		flash[:success] = "Successfully deleted"
 		redirect_to action: 'show'
 	end
-	def check
+	def index
 		@booking = Booking.last
+	  respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @booking}
+    end
 	end
 	private
 		def booking_params
