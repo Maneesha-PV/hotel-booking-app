@@ -1,7 +1,7 @@
 class RoomController < ApplicationController
 	def new
 		@room = Room.new
-		@room_type = RoomType.all
+		@room_type = RoomType.where('(admin_id =?)',current_admin)
 		
 	end
 	def create

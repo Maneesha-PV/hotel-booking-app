@@ -11,7 +11,7 @@ class AdminController < ApplicationController
   	@admin.hotel_id = params[:hotel_id]
   	#@admin.role = "admin"
    	if @admin.save
-      UserMailer.admin_sign_up_mail(@admin).deliver_now!
+      UserMailer.admin_sign_up_mail(@admin).deliver_later!
      	#redirect_to room_index_path notice: "Created admin successfully"
       render action: 'show' 
     else

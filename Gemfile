@@ -31,9 +31,15 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#configuring environment variable
 gem 'figaro'
+#bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+#Sidekiq background processing
 gem 'sidekiq', '3.2.5'
+#google authentication
+gem 'omniauth-google-oauth2'
+gem 'omniauth'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

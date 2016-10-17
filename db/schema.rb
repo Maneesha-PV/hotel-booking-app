@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161012040543) do
+ActiveRecord::Schema.define(version: 20161013112102) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email",                  default: "", null: false
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20161012040543) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.integer  "hotel_id"
+    t.string   "provider"
+    t.string   "uid"
     t.index ["email"], name: "index_admins_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
   end
@@ -33,7 +35,6 @@ ActiveRecord::Schema.define(version: 20161012040543) do
   create_table "bookings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.datetime "check_in_date"
     t.datetime "check_out_date"
-    t.integer  "total_rooms"
     t.integer  "number_of_children"
     t.integer  "number_of_guest"
     t.datetime "created_at",         null: false
