@@ -1,0 +1,14 @@
+I, [2016-10-18T14:13:33.099664 #12301]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:13:38.299774 #12298]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-18T14:15:03.013679 #12298]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:15:03.193587 #12301]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:15:05.050729 #12298]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-18T14:44:51.926707 #13292]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:45:10.479318 #13295]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:45:22.082269 #13292]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T14:45:23.630599 #13292]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-18T15:26:36.967359 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T15:26:37.332614 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T15:26:39.121106 #14307]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-18T15:32:56.893595 #14307]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-18T15:32:57.028705 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.

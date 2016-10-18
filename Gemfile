@@ -40,6 +40,7 @@ gem 'sidekiq', '3.2.5'
 #google authentication
 gem 'omniauth-google-oauth2'
 gem 'omniauth'
+gem 'unicorn'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
