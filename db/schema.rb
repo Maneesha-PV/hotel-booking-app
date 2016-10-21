@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161013112102) do
+ActiveRecord::Schema.define(version: 20161019041135) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "email",                  default: "", null: false
@@ -75,6 +75,28 @@ ActiveRecord::Schema.define(version: 20161013112102) do
     t.datetime "updated_at",       null: false
     t.string   "room_type_select"
     t.integer  "admin_id"
+  end
+
+  create_table "sidekiq_jobs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "jid"
+    t.string   "queue"
+    t.string   "class_name"
+    t.text     "args",        limit: 65535
+    t.boolean  "retry"
+    t.datetime "enqueued_at"
+    t.datetime "started_at"
+    t.datetime "finished_at"
+    t.string   "status"
+    t.string   "name"
+    t.text     "result",      limit: 65535
+    t.index ["class_name"], name: "index_sidekiq_jobs_on_class_name", using: :btree
+    t.index ["enqueued_at"], name: "index_sidekiq_jobs_on_enqueued_at", using: :btree
+    t.index ["finished_at"], name: "index_sidekiq_jobs_on_finished_at", using: :btree
+    t.index ["jid"], name: "index_sidekiq_jobs_on_jid", using: :btree
+    t.index ["queue"], name: "index_sidekiq_jobs_on_queue", using: :btree
+    t.index ["retry"], name: "index_sidekiq_jobs_on_retry", using: :btree
+    t.index ["started_at"], name: "index_sidekiq_jobs_on_started_at", using: :btree
+    t.index ["status"], name: "index_sidekiq_jobs_on_status", using: :btree
   end
 
   create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|

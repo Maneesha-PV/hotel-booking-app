@@ -1,10 +1,10 @@
-I, [2016-10-18T15:26:10.101847 #14303]  INFO -- : Refreshing Gem list
-I, [2016-10-18T15:26:11.434268 #14303]  INFO -- : unlinking existing socket=/home/qburst/Maneesha/railsprograms/hotel_booking/shared/sockets/unicorn.sock
-I, [2016-10-18T15:26:11.434434 #14303]  INFO -- : listening on addr=/home/qburst/Maneesha/railsprograms/hotel_booking/shared/sockets/unicorn.sock fd=11
-I, [2016-10-18T15:26:11.434520 #14303]  INFO -- : worker=0 spawning...
-I, [2016-10-18T15:26:11.435930 #14303]  INFO -- : worker=1 spawning...
-I, [2016-10-18T15:26:11.436322 #14307]  INFO -- : worker=0 spawned pid=14307
-I, [2016-10-18T15:26:11.436416 #14307]  INFO -- : worker=0 ready
-I, [2016-10-18T15:26:11.437460 #14303]  INFO -- : master process ready
-I, [2016-10-18T15:26:11.437837 #14310]  INFO -- : worker=1 spawned pid=14310
-I, [2016-10-18T15:26:11.437928 #14310]  INFO -- : worker=1 ready
+I, [2016-10-21T14:42:54.183892 #9173]  INFO -- : Refreshing Gem list
+I, [2016-10-21T14:42:55.548867 #9173]  INFO -- : unlinking existing socket=/home/qburst/Maneesha/railsprograms/hotel_booking/shared/sockets/unicorn.sock
+I, [2016-10-21T14:42:55.549009 #9173]  INFO -- : listening on addr=/home/qburst/Maneesha/railsprograms/hotel_booking/shared/sockets/unicorn.sock fd=11
+I, [2016-10-21T14:42:55.549085 #9173]  INFO -- : worker=0 spawning...
+I, [2016-10-21T14:42:55.550472 #9173]  INFO -- : worker=1 spawning...
+I, [2016-10-21T14:42:55.550855 #9178]  INFO -- : worker=0 spawned pid=9178
+I, [2016-10-21T14:42:55.550952 #9178]  INFO -- : worker=0 ready
+I, [2016-10-21T14:42:55.552055 #9173]  INFO -- : master process ready
+I, [2016-10-21T14:42:55.552413 #9181]  INFO -- : worker=1 spawned pid=9181
+I, [2016-10-21T14:42:55.552498 #9181]  INFO -- : worker=1 ready

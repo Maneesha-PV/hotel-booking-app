@@ -41,6 +41,10 @@ gem 'sidekiq', '3.2.5'
 gem 'omniauth-google-oauth2'
 gem 'omniauth'
 gem 'unicorn'
+gem 'yaml_db'
+#gem 'rack'
+#sidekiq UI
+#gem 'sidekiq_monitor'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

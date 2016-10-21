@@ -35,6 +35,7 @@ class BookingController < ApplicationController
 	  respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @booking}
+      #format.json render :partial => "booking/index.json"
     end
 	end
 	private

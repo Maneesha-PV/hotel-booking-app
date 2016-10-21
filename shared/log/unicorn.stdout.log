@@ -1,14 +1,169 @@
-I, [2016-10-18T14:13:33.099664 #12301]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:13:38.299774 #12298]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
-I, [2016-10-18T14:15:03.013679 #12298]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:15:03.193587 #12301]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:15:05.050729 #12298]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
-I, [2016-10-18T14:44:51.926707 #13292]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:45:10.479318 #13295]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:45:22.082269 #13292]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T14:45:23.630599 #13292]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
-I, [2016-10-18T15:26:36.967359 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T15:26:37.332614 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T15:26:39.121106 #14307]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
-I, [2016-10-18T15:32:56.893595 #14307]  INFO -- omniauth: (google_oauth2) Request phase initiated.
-I, [2016-10-18T15:32:57.028705 #14310]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T17:51:54.538095 #18666]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T17:51:55.216623 #18669]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T17:51:57.017337 #18669]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-19T18:17:04.325591 #19147]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T18:17:04.843072 #19147]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T18:17:06.466899 #19147]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-19T18:29:14.996072 #19684]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T18:29:15.397992 #19681]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-19T18:29:16.992669 #19681]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x00000006aefe60>
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x00000006aefaa0>
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x000000047f42a8>
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x000000047c1a88>
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x00000006b64e68>
+302
+{"X-Frame-Options"=>"SAMEORIGIN", "X-XSS-Protection"=>"1; mode=block", "X-Content-Type-Options"=>"nosniff", "Location"=>"http://10.7.60.17.xip.io/admin", "Content-Type"=>"text/html; charset=utf-8"}
+#<ActionDispatch::Response::RackBody:0x00000006b8e6f0>
+I, [2016-10-20T09:08:59.566994 #3822]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:09:00.108913 #3822]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:09:01.889915 #3819]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-20T09:19:20.729332 #3819]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:19:21.091478 #3819]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:19:24.511301 #3819]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+I, [2016-10-20T09:19:30.889257 #3819]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+E, [2016-10-20T09:19:31.286689 #3819] ERROR -- omniauth: (google_oauth2) Authentication failure! invalid_credentials: OAuth2::Error, invalid_grant: Invalid code.
+{
+  "error" : "invalid_grant",
+  "error_description" : "Invalid code."
+}
+I, [2016-10-20T09:20:50.946564 #3822]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:20:51.036131 #3822]  INFO -- omniauth: (google_oauth2) Request phase initiated.
+I, [2016-10-20T09:20:51.394118 #3822]  INFO -- omniauth: (google_oauth2) Callback phase initiated.
+#<Rack::BodyProxy:0x00000006579828>
+743: unexpected token at '<!DOCTYPE html>
+<html>
+  <head>
+    <title>HotelBooking</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="TgspSqDs7gbwjmvRtS63b9D5DwJHEJmJSMlj5MfJWAWPNAJCUyZWc48Q1ihQsF8Ryb8uMlgPDkvVCOccalZq4Q==" />
+
+    <link rel="stylesheet" media="all" href="/assets/application-da56b10a7f9afb552642b5bab136565fc93247a4323d989969a2c326b984e6f4.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-0e78cf72a63997471f11b4a8d735941edaa312c2e58825433acf407abde0083a.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse ">
+	  <div class="container-fluid">
+<ul class="nav navbar-nav navbar-right">
+      <li><a href="/users/sign_up">signup</a></li>
+  			<li><a href="/users/sign_in">Login</a> </li> 
+
+  			<li><a href="/admins/sign_in">Admin Login</a></li>  
+
+ 		</ul>
+ 		 </div>
+</nav>
+    
+</nav>
+<h1 style="color: darkgreen; text-align: center;">Hotel booking application</h1>
+
+  </body>
+</html>
+'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/json-2.0.2/lib/json/common.rb:156:in `parse'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/json-2.0.2/lib/json/common.rb:156:in `parse'
+/home/qburst/Maneesha/railsprograms/hotel_booking/lib/timer.rb:18:in `block in call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/Maneesha/railsprograms/hotel_booking/lib/timer.rb:17:in `call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/unicorn:23:in `load'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/unicorn:23:in `<main>'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ssssssssssssssssssss
+#<Rack::BodyProxy:0x000000067f20a0>
+743: unexpected token at '<!DOCTYPE html>
+<html>
+  <head>
+    <title>HotelBooking</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="NumeeygUBJPXVW/ukZ0kud3MmNKp+DJqvQEyFTxPw//31rVz29685qjL0hd0A8zHxIq54rbnpaggwLbtkdDxGw==" />
+
+    <link rel="stylesheet" media="all" href="/assets/application-da56b10a7f9afb552642b5bab136565fc93247a4323d989969a2c326b984e6f4.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-0e78cf72a63997471f11b4a8d735941edaa312c2e58825433acf407abde0083a.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <h2>Log in</h2>
+
+<form class="new_admin" id="new_admin" action="/admins/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="sNEENEZcJwaZWyDW9Iz2oGMhUYPFXwWeKe8l5l6vCWL2aDJnhE3nrZZQ+Q2rOzBV28YtctOxtPBreA0LLlIlbA==" />
+  <div class="field">
+    <label for="admin_email">Email</label><br />
+    <input autofocus="autofocus" type="email" value="" name="admin[email]" id="admin_email" />
+  </div>
+
+  <div class="field">
+    <label for="admin_password">Password</label><br />
+    <input autocomplete="off" type="password" name="admin[password]" id="admin_password" />
+  </div>
+
+    <div class="field">
+      <input name="admin[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="admin[remember_me]" id="admin_remember_me" />
+      <label for="admin_remember_me">Remember me</label>
+    </div>
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Log in" data-disable-with="Log in" />
+  </div>
+</form>
+
+  <a href="/admins/sign_up">Sign up</a><br />
+
+  <a href="/admins/password/new">Forgot your password?</a><br />
+
+
+
+    <a href="/admins/auth/google_oauth2">Sign in with GoogleOauth2</a><br />
+
+
+  </body>
+</html>
+'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/json-2.0.2/lib/json/common.rb:156:in `parse'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/json-2.0.2/lib/json/common.rb:156:in `parse'
+/home/qburst/Maneesha/railsprograms/hotel_booking/lib/timer.rb:18:in `block in call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `block in each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+/home/qburst/Maneesha/railsprograms/hotel_booking/lib/timer.rb:17:in `call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:562:in `process_client'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/lib/unicorn/http_server.rb:132:in `start'
+/home/qburst/.rvm/gems/ruby-2.3.0/gems/unicorn-5.1.0/bin/unicorn:126:in `<top (required)>'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/unicorn:23:in `load'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/unicorn:23:in `<main>'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `eval'
+/home/qburst/.rvm/gems/ruby-2.3.0/bin/ruby_executable_hooks:15:in `<main>'
+ssssssssssssssssssss

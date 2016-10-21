@@ -19,6 +19,7 @@ class RoomController < ApplicationController
       format.html # index.html.erb
       #format.json { render json: @room_type}
       format.json { render json: @room}
+
     end
 
 	end
